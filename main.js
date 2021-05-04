@@ -1,0 +1,1 @@
+var userAgent = navigator.userAgent;

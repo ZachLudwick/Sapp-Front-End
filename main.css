@@ -15,6 +15,11 @@
     src: url("./assets/fonts/whitneybold.woff") format("woff");
 }
 
+@font-face {
+    font-family: 'Sapp Skript';
+    src: url("./assets/fonts/sappskript.woff") format("woff");
+}
+
 /*Base*/
 * {
     margin: 0;
@@ -37,6 +42,7 @@ html {
     --main-font-family-light: 'Whitney Light', sans-serif;
     --main-font-family-medium: 'Whitney Medium', sans-serif;
     --main-font-family-bold: 'Whitney Bold', sans-serif;
+    --main-font-logo-bold: 'Sapp Skript', sans-serif;
     --num-of-grid-columns: 4;
     --section-spacing: 5.6rem 2.4rem;
     --container-width: 126rem;
@@ -80,6 +86,9 @@ img {
 
 .logo {
     width: 12.4rem;
+    font-family: var(--main-font-logo-bold);
+    color: var(--light-clr);
+    font-size: var(--primary-title-font-size);
 }
 
 .nav-list {
