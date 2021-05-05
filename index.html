@@ -9,11 +9,11 @@
     <!--- Import box-icons --->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
           rel="stylesheet" >
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-<section class="hero">
+<section class="hero" id="hero-id">
     
     <header class="main-header container">
         
@@ -22,7 +22,7 @@
                 Sapp
             </a>
 
-            <ul class="nav-list">
+            <ul class="nav-list" id="nav-list">
                 <li class="nav-item">
                     <a href="#" class="nav-link">Download</a>
                 </li>
@@ -39,12 +39,34 @@
                     <a href="#" class="nav-link">Support</a>
                 </li>
             </ul>
-            
+
+            <div class="nav-mob-div">
+                <ul class="nav-list-mob">
+                    <li class="nav-item-mob">
+                        <a href="" class="nav-link-mob">Download</a>
+                    </li>
+                    <li class="nav-item-mob">
+                        <a href="" class="nav-link-mob">Why Sapp?</a>
+                    </li>
+                    <li class="nav-item-mob">
+                        <a href="" class="nav-link-mob">Premium</a>
+                    </li>
+                    <li class="nav-item-mob">
+                        <a href="" class="nav-link-mob">Safety</a>
+                    </li>
+                    <li class="nav-item-mob">
+                        <a href="" class="nav-link-mob">Support</a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="nav-items-right">
-                <a href="#" class="btn btn-small btn-light btn-login">Login</a>
-                <span class="mobile-toggle">
-                    <i class="bx bx-menu btn-open"></i>
-                    <i class="bx bx-x btn-close"></i>
+                <a href="#" class="btn btn-small btn-light btn-login" id="authButton-type-filler">Login</a>
+                <a href="Login.html" class="btn btn-small btn-light btn-login" id="authButton-type-login">Login</a>
+                <a onclick="open()" class="btn btn-small btn-light btn-login" id="authButton-type-open">Open</a>
+                <span class="mobile-toggle" id="mobile-nav">
+                    <i onclick="mobileNav()" class="bx bx-menu btn-open" id="open-nav-button"></i>
+                    <i onclick="closeMobileNav()" class="bx bx-x btn-close" id="close-nav-button"></i>
                 </span>
             </div>
         </nav>
@@ -58,12 +80,13 @@
                 Bringing social to another level.
             </h1>
 
-            <p class="hero-description">Whether you are a gamer, a influencer, an photographer, a make-up artist
+            <p class="hero-description">Whether you are a gamer, a influencer, an photographer, a make-up artist.
+                There's a place for you to hang out.
             </p>
 
-            <div class="hero-btn-group">
-                <a href="#" class="btn btn-large btn-light">
-                    <i class="bx bx-download"></i> Download for Windows
+            <div class="hero-btn-group" id="download_button_group">
+                <a href="#" class="btn btn-large btn-light" id="btn-download-os">
+                    <i class="bx bx-download"></i> Download for
                 </a>
 
                 <a href="#" class="btn btn-large btn-dark">
@@ -78,10 +101,11 @@
 
 <section class="collaboration">
     <div class="row container">
-        <img src="./assets/images/section-1.svg" alt="" class="grid-image">
+        <img src="./assets/images/section-4-sapp.png" alt="" class="grid-image">
         <div class="text-group">
-            <h2 class="title secondary-title">An invite-only place with plenty of room to talk</h2>
-            <p>Sapp chat's are organised into topic-based channels where you can collaborate, share and just talk about your day without clogging up a group chat.</p>
+            <h2 class="title secondary-title">Upload, Share & Comment.</h2>
+            <p>Sapps' Built in Direct-Messaging feature allows you to
+                create group chats', share images and stay in contact wherever you are.</p>
         </div>
     </div>
 </section>
@@ -94,7 +118,7 @@
 
 <section class="voice-channel">
     <div class="row container">
-        <img src="./assets/images/section-2.svg" alt="" class="grid-image order-2">
+        <img src="./assets/images/section-4-sapp.png" alt="" class="grid-image order-2">
         <div class="text-group order-2">
             <h2 class="title secondary-title">
                 An invite-only place with plenty of room to talk
@@ -115,7 +139,7 @@
 
 <section class="modderation-tools">
     <div class="row container">
-        <img src="./assets/images/section-3.svg" alt="" class="grid-image order-2">
+        <img src="./assets/images/section-4-sapp.png" alt="" class="grid-image order-2">
         <div class="text-group order-2">
 
             <h2 class="title secondary-title">
@@ -140,15 +164,14 @@
     <div class="row container">
         <div class="text-group">
             <h2 class="title secondary-title">
-                Reliable tech for staying closer.
+                Sonic fast speed.
             </h2>
 
             <p>
-                Low-latency voice and video makes you feel as if you are in the same
-                room as the other user. Wave hello over another video, watch friends stream their games, or gather up and have a drawing session with screen share
+                Low-latency "sonic fast" servers to ensure that whatever you are doing, you will always stay connected.
             </p>
         </div>
-        <img src="./assets/images/section-4.svg" alt="" class="grid-image">
+        <img src="./assets/images/section-4-sapp.png" alt="" class="grid-image">
     </div>
 </section>
 
@@ -158,9 +181,11 @@
         <h2>
             Ready to start your journey?
         </h2>
-        <a href="#" class="btn btn-large btn-brand">
-            <i class="bx bx-download"></i> Download for Windows
-        </a>
+        <div class="btn-section-3-download" id="btn-download-os-footer">
+            <a href="#" class="btn btn-large btn-brand">
+                <i class="bx bx-download"></i> Download for
+            </a>
+        </div>
     </div>
 </section>
 
@@ -189,39 +214,12 @@
         <div class="spacer"></div>
 
         <div class="footer-links-group">
-            <h5 class="footer-title">Product</h5>
+            <h5 class="footer-title">Links</h5>
+            <a href="#" class="footer-link">Premium</a>
             <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-        </div>
-
-        <div class="footer-links-group">
-            <h5 class="footer-title">Product</h5>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-        </div>
-
-        <div class="footer-links-group">
-            <h5 class="footer-title">Product</h5>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-        </div>
-
-        <div class="footer-links-group">
-            <h5 class="footer-title">Product</h5>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
-            <a href="#" class="footer-link">Download</a>
+            <a href="#" class="footer-link">Sapp Ads</a>
+            <a href="#" class="footer-link">Legal</a>
+            <a href="#" class="footer-link">Safety</a>
         </div>
 
         <div class="divider"></div>
@@ -229,9 +227,10 @@
 
     <div class="row container remove-grid">
         <a href="index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="">
+            Sapp
         </a>
-        <a href="#" class="btn btn-small btn-brand">Login</a>
+        <a href="`#`" class="btn btn-small btn-brand btn-login" id="authButton-type-login-footer">Login</a>
+        <a href="" class="btn btn-small btn-brand btn-login" id="authButton-type-open-footer">Open</a>
     </div>
 
 </footer>
@@ -260,6 +259,6 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
 </script>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
