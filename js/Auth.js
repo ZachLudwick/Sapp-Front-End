@@ -22,11 +22,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
 });
 
-function resetPasswordClick() {
-    window.alert('Soon!')
-}
+function resetPasswordClick() { window.alert('Soon!') }
 
-function registerClicked() { }
+function registerClicked() { window.alert('Soon!') }
 
 function register() {
     window.alert('Fucntion not ready yet.')
@@ -35,20 +33,20 @@ function register() {
 function loginClicked() { }
 
 function login() {
-    var emailTextField = docId('login_email_textField').value;
-    var passwordTextField = docId('login_pass_textField').value;
+    var email = document.getElementById('login_email_textField').value;
+    var password = document.getElementById('login_pass_textField').value;
 
-    auth.signInWithEmailAndPassword(emailTextField, passwordTextField)
+    firebase.auth().signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
-            var currentUser = user.email;
-            window.alert(currentUser.email)
+            // ...
+            window.alert("logged in")
         })
         .catch((error) => {
             var errorCode = error.code;
             var errorMessage = error.message;
-        })
+        });
 }
 
 

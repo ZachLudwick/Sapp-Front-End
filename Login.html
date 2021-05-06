@@ -46,18 +46,52 @@
     </header>
 
     <div class="auth-div">
-        <section class="login_sec">
+        <section class="login_sec" id="log-in-div">
             <div class="container user_input">
-                <div class="bg-blur"></div>
-                <input type="email" placeholder="Email" id="login_email_textField" class="textField">
+
+                <input type="email" placeholder="Email" id="login_email_textField" class="textField tf-t">
                 <input type="password" placeholder="Password" id="login_pass_textField" class="textField">
-                <a onclick="login()" class="btn btn-small btn-light btn-login login_user_button_submit" id="login_user_button">Login</a>
+
                 <div class="reset-pw-div">
                     <span class="forgot-pw-s">
                         Trouble signing in?
                     </span>
                     <a onclick="resetPasswordClick()" class="forgot-pw-a">Reset Password</a>
                 </div>
+
+                <a onclick="login()" class="btn btn-small btn-light btn-login login_user_button_submit" id="login_user_button">Login</a>
+
+                <div class="create-acc-div">
+                    <span class="create-acc-s">
+                        Need an account?
+                    </span>
+                    <a onclick="registerClicked()" class="create-acc-a">Register</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="reset-pw-div" id="reset-pw-div">
+            <div class="container user_input">
+
+                <input type="email" placeholder="Email" id="forgot_email_textField" class="textField tf-t">
+
+                <div class="reset-pw-div">
+                    <span class="forgot-pw-s">
+                        Trouble signing in?
+                    </span>
+                    <a onclick="resetPasswordClick()" class="forgot-pw-a">Reset Password</a>
+                </div>
+
+                <a onclick="login()" class="btn btn-small btn-light btn-login login_user_button_submit" id="login_user_button">Login</a>
+
+                <div class="create-acc-div">
+                    <span class="create-acc-s">
+                        Need an account?
+                    </span>
+                    <a onclick="registerClicked()" class="create-acc-a">Register</a>
+                </div>
+
             </div>
         </section>
     </div>
@@ -111,21 +145,19 @@
         <a href="index.html" class="logo">
             Sapp
         </a>
-        <a href="`#`" class="btn btn-small btn-brand btn-login" id="authButton-type-login-footer">Login</a>
+        <a class="btn btn-small btn-brand btn-login" id="authButton-type-login-footer">Login</a>
         <a href="" class="btn btn-small btn-brand btn-login" id="authButton-type-open-footer">Open</a>
     </div>
 
 </footer>
 
-
-
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
 
 <script>
     // Your web app's Firebase configuration
