@@ -107,8 +107,6 @@ img {
     margin: 0 auto;
 }
 
-
-
 .nav-mob-div {
     display: none;
 }
@@ -260,6 +258,16 @@ img {
     cursor: pointer;
 }
 
+
+/* Displays for Auth-Divs */
+
+.login_sec {
+    display: none;
+}
+
+.reset-pw-sec {
+    display: block;
+}
 
 /* Main Footer */
 

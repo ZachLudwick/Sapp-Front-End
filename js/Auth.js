@@ -1,5 +1,4 @@
-var docId = document.getElementById;
-var auth = firebase.auth();
+
 // hello avacardo - Ella-May spakman 2021
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
@@ -12,17 +11,21 @@ firebase.auth().onAuthStateChanged(function(user) {
 
             var email_id = user.email;
             var user_uid = user.uid;
-
+            document.getElementById('log-in-sec').style.display = "none";
+            document.getElementById('reset-pw-div').style.display = "none";
         }
 
     } else {
         // User isn't singed in.
 
-        // Code
+        document.getElementById('log-in-sec').style.display = "block";
+        document.getElementById('reset-pw-div').style.display = "none";
     }
 });
 
 function resetPasswordClick() { window.alert('Soon!') }
+
+function resetPasswordSubmit() {}
 
 function registerClicked() { window.alert('Soon!') }
 
@@ -30,7 +33,10 @@ function register() {
     window.alert('Fucntion not ready yet.')
 }
 
-function loginClicked() { }
+function loginClicked() {
+    document.getElementById('reset-pw-div').style.display = "none";
+    document.getElementById('log-in-sec').style.display = "block";
+}
 
 function login() {
     var email = document.getElementById('login_email_textField').value;
