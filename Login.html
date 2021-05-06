@@ -12,20 +12,110 @@
     <link rel="stylesheet" href="css/auth.css">
 </head>
 <body>
-
 <section class="hero">
-
     <header class="main-header container">
 
         <nav class="main-nav">
             <a href="" class="logo">
                 Sapp
             </a>
+
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Why Sapp?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Premium</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Safety</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+            </ul>
+
+            <div class="nav-items-right">
+                <a href="index.html" class="btn btn-small btn-light btn-login" id="authButton-type-filler">Back</a>
+            </div>
         </nav>
 
     </header>
 
+    <div class="auth-div">
+        <section class="login_sec">
+            <div class="container user_input">
+                <div class="bg-blur"></div>
+                <input type="email" placeholder="Email" id="login_email_textField" class="textField">
+                <input type="password" placeholder="Password" id="login_pass_textField" class="textField">
+                <a onclick="login()" class="btn btn-small btn-light btn-login login_user_button_submit" id="login_user_button">Login</a>
+                <div class="reset-pw-div">
+                    <span class="forgot-pw-s">
+                        Trouble signing in?
+                    </span>
+                    <a onclick="resetPasswordClick()" class="forgot-pw-a">Reset Password</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
 </section>
+
+<footer class="main-footer">
+
+    <div class="row container">
+        <div class="info-box">
+            <h4 class="footer-title">Sapp.</h4>
+            <div class="languages">
+                <img src="assets/images/flag_US.png" alt="">
+                <span>English, USA</span> <i class="bx bx-chevron-down"></i>
+            </div>
+            <div class="social-media">
+                <a href="" class="sm-link">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="" class="sm-link">
+                    <i class="bx bxl-youtube"></i>
+                </a>
+                <a href="" class="sm-link">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="footer-links-group">
+            <h5 class="footer-title">Legal</h5>
+            <a href="#" class="footer-link">Safety</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Legal</a>
+        </div>
+
+
+        <div class="footer-links-group">
+            <h5 class="footer-title">General Info</h5>
+            <a href="#" class="footer-link">Premium</a>
+            <a href="#" class="footer-link">Download</a>
+            <a href="#" class="footer-link">Advertisers</a>
+        </div>
+
+        <div class="divider"></div>
+    </div>
+
+    <div class="row container remove-grid">
+        <a href="index.html" class="logo">
+            Sapp
+        </a>
+        <a href="`#`" class="btn btn-small btn-brand btn-login" id="authButton-type-login-footer">Login</a>
+        <a href="" class="btn btn-small btn-brand btn-login" id="authButton-type-open-footer">Open</a>
+    </div>
+
+</footer>
 
 
 
