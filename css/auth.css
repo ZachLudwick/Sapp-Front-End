@@ -258,6 +258,10 @@ img {
     cursor: pointer;
 }
 
+.auth-button {
+    display: none;
+}
+
 
 /* Displays for Auth-Divs */
 

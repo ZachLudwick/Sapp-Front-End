@@ -76,21 +76,23 @@
 
                 <input type="email" placeholder="Email" id="forgot_email_textField" class="textField tf-t">
 
-                <div class="reset-pw-div">
-                    <span class="forgot-pw-s">
-                        Trouble signing in?
-                    </span>
-                    <a onclick="resetPasswordClick()" class="forgot-pw-a">Reset Password</a>
-                </div>
-
                 <a onclick="resetPasswordSubmit()" class="btn btn-small btn-light btn-login login_user_button_submit" id="submit_reset_button">Reset Password</a>
 
                 <div class="create-acc-div">
                     <span class="create-acc-s">
-                        Need an account?
+                        Already have an account?
                     </span>
-                    <a onclick="registerClicked()" class="create-acc-a">Register</a>
+                    <a onclick="loginClicked()" class="create-acc-a">Login</a>
                 </div>
+
+            </div>
+        </section>
+
+
+        <section class="register-user-sec" id="reg-user-sec">
+            <div class="container user_input">
+
+                <input type="email" placeholder="Email" id="register_email_field">
 
             </div>
         </section>

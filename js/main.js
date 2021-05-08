@@ -84,12 +84,18 @@ firebase.auth().onAuthStateChanged(function(user) {
             document.getElementById('authButton-type-filler').style.display = "none";
             document.getElementById('authButton-type-login').style.display = "none";
             document.getElementById('authButton-type-open').style.display = "block";
+
+            document.getElementById('authButton-type-open-footer').style.display = "block";
+            document.getElementById('authButton-type-login-footer').style.display = "none";
         }
     } else {
         // User isn't signed in.
         document.getElementById('authButton-type-filler').style.display = "none";
         document.getElementById('authButton-type-login').style.display = "block";
         document.getElementById('authButton-type-open').style.display = "none";
+
+        document.getElementById('authButton-type-login-footer').style.display = "block";
+        document.getElementById('authButton-type-open-footer').style.display = "none";
 
     }
 });

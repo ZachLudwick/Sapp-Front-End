@@ -20,14 +20,22 @@ firebase.auth().onAuthStateChanged(function(user) {
 
         document.getElementById('log-in-sec').style.display = "block";
         document.getElementById('reset-pw-div').style.display = "none";
+
+
     }
 });
 
-function resetPasswordClick() { window.alert('Soon!') }
+function resetPasswordClick() {
+    document.getElementById('log-in-sec').style.display = "none";
+    document.getElementById('reset-pw-div').style.display = "block";
+}
 
 function resetPasswordSubmit() {}
 
-function registerClicked() { window.alert('Soon!') }
+function registerClicked() {
+    document.getElementById('log-in-sec').style.display = "none";
+    document.getElementById('reg-user-sec').style.display = "block";
+}
 
 function register() {
     window.alert('Fucntion not ready yet.')

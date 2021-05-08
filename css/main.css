@@ -273,6 +273,10 @@ img {
     background-color: var(--off-white-clr);
 }
 
+.btn-openIn-browser {
+    display: none;
+}
+
 .download .remove-grid {
     display: block;
     padding-top: 0;
@@ -389,6 +393,10 @@ img {
     line-height: 1.8;
 }
 
+.btn-auth {
+    display: none;
+}
+
 /* Mobile Nav */
 
 .sidebar-mob-div {
@@ -462,6 +470,10 @@ img {
         display: block;
         grid-row: span 2;
     }
+
+    .btn-openIn-browser {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -511,6 +523,10 @@ img {
 
     .order-1 {
         grid-column: 1/span 4;
+    }
+
+    .btn-openIn-browser {
+        display: block;
     }
 
 }
