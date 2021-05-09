@@ -33,8 +33,9 @@ function resetPasswordClick() {
 function resetPasswordSubmit() {}
 
 function registerClicked() {
-    document.getElementById('log-in-sec').style.display = "none";
-    document.getElementById('reg-user-sec').style.display = "block";
+    //document.getElementById('log-in-sec').style.display = "none";
+    //document.getElementById('reg-user-sec').style.display = "block";
+    window.alert('Registration is not quite ready just yet.')
 }
 
 function register() {

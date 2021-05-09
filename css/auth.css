@@ -273,6 +273,10 @@ img {
     display: block;
 }
 
+.register-user-sec {
+    display: none;
+}
+
 /* Main Footer */
 
 .main-footer {

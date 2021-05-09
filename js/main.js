@@ -45,8 +45,6 @@ if(userAgent.includes('Android')) {
 osDownloadButton(osDetails);
 
 function osDownloadButton(osDetails) {
-    console.log(osDetails.name)
-
     document.getElementById('download_button_group').innerHTML = '<a href=' + osDetails.downloadUrl + ' class="btn btn-large btn-light" id="btn-download-os">' +
         '<i class="bx bx-download"></i> Download for ' + osDetails.name + '</a>' +
         '              <a href="#" class="btn btn-large btn-dark">\n' +
