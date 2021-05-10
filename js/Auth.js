@@ -13,6 +13,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             var user_uid = user.uid;
             document.getElementById('log-in-sec').style.display = "none";
             document.getElementById('reset-pw-div').style.display = "none";
+            document.getElementById('reg-user-sec').style.display = "none";
         }
 
     } else {
@@ -33,9 +34,9 @@ function resetPasswordClick() {
 function resetPasswordSubmit() {}
 
 function registerClicked() {
-    //document.getElementById('log-in-sec').style.display = "none";
-    //document.getElementById('reg-user-sec').style.display = "block";
-    window.alert('Registration is not quite ready just yet.')
+    document.getElementById('log-in-sec').style.display = "none";
+    document.getElementById('reg-user-sec').style.display = "block";
+    //window.alert('Registration is not quite ready just yet.')
 }
 
 function register() {
@@ -44,6 +45,7 @@ function register() {
 
 function loginClicked() {
     document.getElementById('reset-pw-div').style.display = "none";
+    document.getElementById('reg-user-sec').style.display = "none";
     document.getElementById('log-in-sec').style.display = "block";
 }
 

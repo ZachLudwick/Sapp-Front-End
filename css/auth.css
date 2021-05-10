@@ -223,6 +223,18 @@ img {
 
 /* Auth Fields (Reusable) */
 
+.auth-container {
+    max-width: 54rem;
+    background-color: var(--dark-clr);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.auth-div {
+    padding: 25px;
+    border-radius: 15px;
+}
+
 .reset-pw-div {
     margin-top: .5rem;
     margin-bottom: .8rem;
@@ -258,6 +270,25 @@ img {
     cursor: pointer;
 }
 
+
+
+.return-to-login {
+    margin-top: .9rem;
+}
+
+.return-to-login span {
+    color: var(--off-white-clr);
+}
+
+.return-to-login a {
+    font-family: var(--main-font-family-medium);
+    color: var(--light-clr);
+}
+
+.return-to-login a:hover {
+    cursor: pointer;
+}
+
 .auth-button {
     display: none;
 }
@@ -266,11 +297,11 @@ img {
 /* Displays for Auth-Divs */
 
 .login_sec {
-    display: none;
+    display: block;
 }
 
 .reset-pw-sec {
-    display: block;
+    display: none;
 }
 
 .register-user-sec {
