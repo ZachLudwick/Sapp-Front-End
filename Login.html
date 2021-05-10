@@ -85,6 +85,12 @@
                     </span>
                         <a onclick="loginClicked()" class="create-acc-a">Login</a>
                     </div>
+                    <span class="reset-pw-error-span" id="reset-pw-error-span">
+                        I have no idea what you have done. Therefore there is not handling for this error, So if you see this you're some unlucky guy :( - Zach Ludwick
+                    </span>
+                    <span class="reset-pw-success-span" id="reset-pw-success-span">
+                        Password reset email sent. Check your inbox!
+                    </span>
 
                 </div>
             </section>
@@ -95,11 +101,31 @@
                     <h1 class="htf">Register</h1>
                     <input type="email" placeholder="Fullname" id="register_fullname_field" class="textField tf-t">
                     <input type="email" placeholder="Username" id="register_username_field" class="textField tf-t">
-                    <input type="email" placeholder="Password" id="register_password_field" class="textField tf-t">
+                    <input type="password" placeholder="Password" id="register_password_field" class="textField tf-t">
                     <input type="email" placeholder="Email" id="register_email_field" class="textField tf-t">
 
-                    <a onclick="resetPasswordSubmit()" class="btn btn-small btn-light btn-login login_user_button_submit btn-sizes"
-                       id="submit_register_button">Register
+                    <a onclick="nextPageRegistration()" class="btn btn-small btn-light btn-login login_user_button_submit btn-sizes"
+                       id="submit_nextPartOfReg_button">
+                        Next
+                    </a>
+                    <div class="return-to-login">
+                        <span>
+                            Already have an account?
+                        </span>
+                        <a onclick="loginClicked()" class="return-to-login-a">Return to login</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="register-user-sec-p2" id="reg-user-sec-p2">
+                <div class="container user_input">
+                    <h1 class="htf">Extra Info</h1>
+                    <input type="email" placeholder="Bio" id="register_bio_field" class="textField tf-t">
+                    <input type="email" placeholder="Job (Leave blank if none)" id="register_job_field" class="textField tf-t">
+
+                    <a onclick="register()" class="btn btn-small btn-light btn-login login_user_button_submit btn-sizes"
+                       id="submit_register_button">
+                        Next
                     </a>
                     <div class="return-to-login">
                         <span>

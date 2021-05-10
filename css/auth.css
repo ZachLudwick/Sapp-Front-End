@@ -52,6 +52,7 @@ html {
 body {
     font-size: var(--general-font-size);
     font-family: var(--main-font-family-light);
+    background: var(--dark-clr);
 }
 
 a {
@@ -310,6 +311,28 @@ h1 {
 
 .register-user-sec {
     display: none;
+}
+
+.register-user-sec-p2 {
+    display: none;
+}
+
+/* Error Spans */
+
+.reset-pw-error-span {
+    display: none;
+    color: #cd1a1a;
+    font-weight: var(--main-font-family-medium);
+    font-size: var(--general-font-size);
+    padding-top: .7rem;
+}
+
+.reset-pw-success-span {
+    display: none;
+    color: #1fcb1f;
+    font-weight: var(--main-font-family-medium);
+    font-size: var(--general-font-size);
+    padding-top: .7rem;
 }
 
 /* Main Footer */
