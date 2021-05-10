@@ -46,6 +46,7 @@ html {
     --num-of-grid-columns: 4;
     --section-spacing: 5.6rem 2.4rem;
     --container-width: 126rem;
+    --letter-spacing-header: 1.4px;
 }
 
 body {
@@ -63,6 +64,13 @@ img {
     display: block;
 }
 
+h1 {
+    font-family: var(--main-font-family-bold);
+    font-weight: var(--main-font-family-bold);
+    color: var(--light-clr);
+    padding-bottom: 2rem;
+    letter-spacing: var(--letter-spacing-header);
+}
 
 .hero {
     background: url("../assets/images/hero-bg.jpg");
@@ -76,16 +84,14 @@ img {
 
 .textField {
     background-color: var(--off-white-clr);
-    display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
     outline: none;
-    width: 29rem;
+    width: 80%;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
-
 }
 
 .tf-t {
@@ -93,7 +99,7 @@ img {
 }
 
 .login_user_button_submit {
-    width: 29rem;
+    width: 80%;
     text-align: center;
 }
 
@@ -270,8 +276,6 @@ img {
     cursor: pointer;
 }
 
-
-
 .return-to-login {
     margin-top: .9rem;
 }
@@ -438,6 +442,23 @@ img {
 
     .grid-image {
         margin: auto 0;
+    }
+
+    .btn-sizes {
+        width: 60%;
+    }
+
+    .textField {
+        background-color: var(--off-white-clr);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px;
+        outline: none;
+        width: 60%;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+
     }
 
     .text-group {
