@@ -42,7 +42,7 @@ class Post {
         this.postOwnerUsername = postOwnerUsername;
     }
     toString() {
-        return this.postCaption + ' , ' +  this.postId + ' , '+ this.postImageUrl + ' , ' +  this.postOwnerUid + ' , ' + this.postOwnerUsername;
+        return this.postCaption + ', ' +  this.postId + ', '+ this.postImageUrl + ', ' +  this.postOwnerUid + ', ' + this.postOwnerUsername;
     }
     setPostCaption() {
         return document.getElementById('post-caption').innerHTML = this.postCaption
@@ -72,10 +72,11 @@ class Post {
         this.setPostImage();
         this.setPostOwnerUid();
         this.setPostOwnerUsername();
-
         this.setPostImageHref();
     }
 }
+
+function postImageCopyToClip() {}
 
 // Firestore data converter
 var postConverter = {
@@ -107,11 +108,12 @@ function getReports() {
             })
     })
         .catch((error) => {
-            console.log("Error: ", error)
+            var errorCode = error.code;
+            console.log("Error: ", error, "ErrorCode: ", errorCode);
         })
 }
 
 function closeReport() {
-
+    db.collection("reports")
 }
 
