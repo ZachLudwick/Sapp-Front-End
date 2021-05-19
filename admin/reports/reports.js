@@ -50,16 +50,30 @@ class Post {
     setPostId() {
         return document.getElementById('post-id').innerHTML = this.postId
     }
-    setPostImage() {
-        var imageUrl = this.postImageUrl + '.png'
-        document.getElementById('post-image-cell').src = imageUrl
+    setPostOwnerUid() {
+        return document.getElementById('postOwnerU-id').innerHTML = this.postOwnerUid
     }
-
+    setPostOwnerUsername() {
+        return document.getElementById('postOwnerUsername').innerHTML = this.postOwnerUsername
+    }
+    setPostImage() {
+        var imageUrl = this.postImageUrl + '.png';
+        var imageUrlWithoutPng = this.postImageUrl;
+        var setProfileImageUrlField = document.getElementById('postImageUrl-a').innerHTML = imageUrlWithoutPng;
+        return document.getElementById('post-image-cell').src = imageUrl + setProfileImageUrlField;
+    }
+    setPostImageHref() {
+        return document.getElementById('copy-to-clip').href = this.postImageUrl;
+    }
 
     setElements() {
         this.setPostCaption();
         this.setPostId();
         this.setPostImage();
+        this.setPostOwnerUid();
+        this.setPostOwnerUsername();
+
+        this.setPostImageHref();
     }
 }
 

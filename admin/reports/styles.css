@@ -158,4 +158,5 @@ img {
 
 .textField {
     color: var(--light-clr);
+    margin-bottom: .9rem;
 }
