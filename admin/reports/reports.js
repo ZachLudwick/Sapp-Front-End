@@ -1,25 +1,25 @@
 var db = firebase.firestore()
 firebase.auth().onAuthStateChanged(function (user) {
-
     if (user) {
         var user = firebase.auth().currentUser;
         var user_uid = user.uid;
         var eeQlsm = "gmwGDApCeWclxx1jiBpKCq6crFp2";
         // User is signed in.
 
-        if (user_uid != eeQlsm) {
+        if (user_uid == eeQlsm) {
             // code
             console.log(user_uid)
             console.log("hello zachludwick")
             getReports()
         } else {
-            print('not zachludwick')
+            console.log("Haha nice try! you're not zachludwick")
+            document.location.href = '../../index.html'
         }
     } else {
         // User is not signed in.
-        console.log("Fuck off ur not logged in...")
+        console.log("User not logged in.")
+        document.location.href = '../../index.html'
     }
-
 });
 
 
