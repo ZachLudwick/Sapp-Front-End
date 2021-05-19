@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sapp | Reports</title>
+    <!--- Import box-icons --->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'
+          rel="stylesheet" >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero">
+
+    <header class="main-header container">
+
+        <nav class="main-nav">
+            <a href="../../index.html" class="logo">
+                Sapp
+            </a>
+
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Why Sapp?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Premium</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Safety</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+            </ul>
+
+            <div class="nav-items-right">
+                <span class="mobile-toggle" id="mobile-nav">
+                    <i onclick="mobileNav()" class="bx bx-menu btn-open" id="open-nav-button"></i>
+                    <i onclick="closeMobileNav()" class="bx bx-x btn-close" id="close-nav-button"></i>
+                </span>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="reports-cell container" id="reports-cell-div">
+        <div class="report-cell">
+            <div class="cell-header">
+                <a onclick="closeReport()" class="btn btn-destructive">Close report</a>
+            </div>
+            <div class="image">
+                <img class="image-1" id="post-image-cell" src="" width="200" height="200">
+            </div>
+            <div class="database-field">
+                <span class="bold textField">
+                    Post Caption:
+                </span>
+                <a class="light textField" id="post-caption"></a>
+            </div>
+            <div class="database-field">
+                <span class="bold textField">
+                    Post Id:
+                </span>
+                <a class="light textField" id="post-id"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyAKr2SeLSaK0ewf7oZxMimS7Io1t8eTS4s",
+        authDomain: "socialsappapp.firebaseapp.com",
+        projectId: "socialsappapp",
+        storageBucket: "socialsappapp.appspot.com",
+        messagingSenderId: "849394702645",
+        appId: "1:849394702645:web:272fbd6ef6dd13459b147c",
+        measurementId: "G-S6GGHWZM1W"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+<script src="reports.js"></script>
+
+</body>
+</html>

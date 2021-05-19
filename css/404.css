@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: 'Whitney Light';
-    src: url("../assets/fonts/whitneylight.woff") format("woff");
+    src: url("../admin/assets/fonts/whitneylight.woff") format("woff");
 }
 
 @font-face {
     font-family: 'Whitney Medium';
-    src: url("../assets/fonts/whitneymedium.woff") format("woff");
+    src: url("../admin/assets/fonts/whitneymedium.woff") format("woff");
 }
 
 @font-face {
     font-family: 'Whitney Bold';
-    src: url("../assets/fonts/whitneybold.woff") format("woff");
+    src: url("../admin/assets/fonts/whitneybold.woff") format("woff");
 }
 
 @font-face {
     font-family: 'Sapp Skript';
-    src: url("../assets/fonts/sappskript.woff") format("woff");
+    src: url("../admin/assets/fonts/sappskript.woff") format("woff");
 }
 
 /*Base*/
@@ -65,7 +65,7 @@ img {
 
 
 .hero {
-    background: url("../assets/images/hero-bg.jpg") center/cover;
+    background: url("../admin/assets/images/hero-bg.jpg") center/cover;
 }
 
 .main-header {
